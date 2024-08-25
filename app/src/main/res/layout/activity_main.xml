@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00C853"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/username_edittext_register"
+        android:layout_width="369dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:autofillHints=""
+        android:background="@drawable/register_edittext_register_login"
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="text"
+        android:paddingStart="8dp"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kep_register_button"
+        tools:ignore="RtlSymmetry,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/email_edittext_register"
+        android:layout_width="374dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:background="@drawable/register_edittext_register_login"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/username_edittext_register"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/username_edittext_register"
+        app:layout_constraintTop_toBottomOf="@+id/username_edittext_register"
+        tools:ignore="RtlHardcoded,RtlSymmetry,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/password_edittext_register"
+        android:layout_width="372dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:background="@drawable/register_edittext_register_login"
+        android:ems="10"
+        android:hint="Jelszó"
+        android:inputType="textPassword"
+        android:paddingStart="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/email_edittext_register"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="@+id/email_edittext_register"
+        app:layout_constraintTop_toBottomOf="@+id/email_edittext_register"
+        tools:ignore="HardcodedText,RtlSymmetry,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/register_button_register"
+        android:layout_width="334dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/runded_button"
+        android:text="Regisztráció"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/password_edittext_register"
+        app:layout_constraintStart_toStartOf="@+id/password_edittext_register"
+        app:layout_constraintTop_toBottomOf="@+id/password_edittext_register"
+        tools:ignore="HardcodedText,MissingConstraints,VisualLintButtonSize,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/allready_have_account_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Ha van már regisztrációd"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/register_button_register"
+        app:layout_constraintHorizontal_bias="0.443"
+        app:layout_constraintStart_toStartOf="@+id/register_button_register"
+        app:layout_constraintTop_toBottomOf="@+id/register_button_register"
+        tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/kep_register_button"
+        android:layout_width="137dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/rounded_select_kep_button"
+        android:text="@string/kep_valasztas"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

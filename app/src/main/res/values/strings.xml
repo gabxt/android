@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GabxMessanger</string>
+    <string name="username">Felhasználó</string>
+    <string name="email">E-mail</string>
+    <string name="szia_hello">Szia hello</string>
+    <string name="e_mail">E mail</string>
+    <string name="jelszo">Jelszó</string>
+    <string name="regisztralj">Vissza a regisztrációhoz</string>
+    <string name="button">Belépés</string>
+    <string name="kep_valasztas">Kép választás</string>
+</resources>

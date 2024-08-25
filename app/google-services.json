@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "855286112157",
+    "project_id": "gabxmessager",
+    "storage_bucket": "gabxmessager.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:855286112157:android:51a779517e8380f01ad974",
+        "android_client_info": {
+          "package_name": "com.example.gabxmessanger"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJvTiFJIkvxJ2oCu4uPhCvWJA1JYxOBpw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

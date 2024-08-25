@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4CAF50" >
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="8dp"
+        android:autofillHints=""
+        android:background="@drawable/register_edittext_register_login"
+        android:ems="10"
+        android:hint="@string/e_mail"
+        android:inputType="textEmailAddress"
+        android:paddingStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlSymmetry,TextContrastCheck,VisualLintTextFieldSize" />
+
+    <Button
+        android:id="@+id/login_button_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
+        android:autofillHints=""
+        android:background="@drawable/runded_button"
+        android:text="@string/button"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        app:layout_constraintVertical_bias="0.02"
+        tools:ignore="VisualLintButtonSize,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:background="@drawable/register_edittext_register_login"
+        android:ems="10"
+        android:hint="@string/jelszo"
+        android:inputType="textPassword"
+        android:paddingStart="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
+        tools:ignore="MissingConstraints,RtlSymmetry,TextContrastCheck,VisualLintTextFieldSize" />
+
+    <TextView
+        android:id="@+id/back_to_register_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/regisztralj"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/login_button_login"
+        app:layout_constraintStart_toStartOf="@+id/login_button_login"
+        app:layout_constraintTop_toBottomOf="@+id/login_button_login"
+        tools:ignore="TextContrastCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>
